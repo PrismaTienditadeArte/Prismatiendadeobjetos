@@ -1,1 +1,1 @@
-# Mi-galer-a-
+# Prisma tienda de Objetos
