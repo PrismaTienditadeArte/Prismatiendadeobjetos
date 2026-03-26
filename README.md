@@ -1,6 +1,12 @@
 
-<img src="fachada.jpg" class=".fondo {
+.galeria {
+  position: relative;
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-}">
+  height: 100vh;
+  margin: 0;
+
+  background-image: url('fachada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
