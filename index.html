@@ -10,16 +10,39 @@
   body {
     margin: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
   }
 
-  .galeria {
+  section {
     width: 100%;
     height: 100vh;
+  }
 
+  /* VIDRIERA */
+  .vidriera {
     background-image: url('fachada2.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+  }
+
+  /* INTERIOR */
+  .interior {
+    background-image: url('interior.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* BOTÓN ENTRAR */
+  .boton {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
   }
 </style>
 
@@ -27,7 +50,13 @@
 
 <body>
 
-<div class="galeria"></div>
+<!-- VIDRIERA -->
+<section class="vidriera">
+  <a href="#interior" class="boton">Entrar</a>
+</section>
+
+<!-- INTERIOR -->
+<section id="interior" class="interior"></section>
 
 </body>
 </html>
