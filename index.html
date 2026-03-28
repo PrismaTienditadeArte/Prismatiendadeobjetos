@@ -13,13 +13,21 @@
     position: relative;
   }
 
-  section img.fondo {
+ section img.fondo {
     width: 100%;
     height: 100vh;
     object-fit: contain;
     object-position: center;
     background-color: #1a1008;
     display: block;
+  }
+
+  /* En celular, la imagen llena toda la pantalla */
+  @media (max-width: 768px) {
+    section img.fondo {
+      object-fit: cover;
+      object-position: center center;
+    }
   }
 
   .boton {
